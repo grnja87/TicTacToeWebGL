@@ -12,8 +12,8 @@ public class StatsPopup : BasePopup
     protected override void OnShow() {
         var s = GameData.Stats;
         totalGamesText.text = $"Total Games: {s.totalGamesPlayed}";
-        player1WinsText.text = $"Player 1 Wins: {s.player1Wins}";
-        player2WinsText.text = $"Player 2 Wins: {s.player2Wins}";
+        player1WinsText.text = $"Player X Wins: {s.player1Wins}";
+        player2WinsText.text = $"Player O Wins: {s.player2Wins}";
         drawsText.text = $"Draws: {s.draws}";
 
         avgDurationText.text = $"Avg Duration: {s.AverageGameDuration:F1}s";
